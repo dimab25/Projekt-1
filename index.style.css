@@ -1,0 +1,89 @@
+
+/* Grid-Text container with widgets */
+.widgets {
+  display: flex;
+  justify-content: space-evenly;
+}
+.grid-container {
+  display: grid;
+  background-color: #121212;
+  gap: 10px;
+  grid-template-areas:
+    "first first second"
+    "first first third";
+    margin: 20px;
+    border-radius: 20px;
+}
+.container {
+  grid-area: first;
+  padding: 20px;
+}
+.widg1 {
+  grid-area: second;
+}
+.grid-container .widg2 {
+  grid-area: third;
+}
+.widg2 fxwidget-er {
+  width: 100%;
+}
+.container {
+  color: white;
+}
+
+/* Image container grid */
+.grid-image-container {
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    "fünf zwei eins"
+    "fünf vier drei";
+    height: auto;
+ padding: 30px;
+}
+.grid-image-container .image {
+  display: flex;
+  justify-content: center;
+}
+.image1 {
+  grid-area: eins;
+}
+.image2 {
+  grid-area: zwei;
+}
+.image3 {
+  grid-area: drei;
+}
+.image4 {
+  grid-area: vier;
+}
+.image5 {
+  grid-area: fünf;
+}
+@media screen and (max-width: 1860px) {
+  .grid-image-container {
+    display: grid;
+    gap: 30px;
+    grid-template-areas:
+      "fünf zwei "
+      "fünf eins"
+      "vier drei";
+      height: auto;
+      padding: 30px;
+  } 
+}
+@media screen and (max-width: 1260px) {
+  .grid-image-container {
+    display: grid;
+    gap: 30px;
+    grid-template-areas:
+      "fünf"
+      "fünf"
+      "eins"
+      "zwei"
+      "vier" 
+      "drei";
+      height: auto;
+      padding: 30px;
+  } 
+}

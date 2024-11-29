@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="registration.stlye.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- Banner -->
+      <div class="banner">
+        <img
+          src="安い東京・写真/rainbow-bridge-2086645_1920.jpg"
+          alt="banner rainboybridge tokyo"
+        />
+        <p id="image-text">安い東京</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="accomondation.html">Accomondation</a></li>
+          <li><a href="food.html">Food</a></li>
+          <li><a href="contact.html">Contact </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Registration page・登録</h1>
+      <h2>
+        Please fill out the following form, so we can contact you and give you
+        the best recommondations.
+      </h2>
+
+      <div class="flex-container">
+        <div class="a-container">
+          <div class="b-container">
+            <!-- namen eingeben -->
+            <form action="/action_page.php">
+              <label for="fname">First name:</label>
+              <br />
+              <input type="text" id="fname" name="fname" />
+              <br />
+              <label for="lname">Last name:</label><br />
+              <input type="text" id="lname" name="lname" />
+              <br /><br />
+
+              <label for="adress">Adress</label>
+              <br />
+              <input type="text" id="adress" />
+            </form>
+          </div>
+
+          <div class="b-container">
+            <!-- Radio, sex eingeben -->
+            <p>Choose your sex:</p>
+            <form action="/action_page.php">
+                <input type="radio" id="male" name="sex" value="male" />  
+              <label for="male">male</label><br />
+                <input type="radio" id="female" name="sex" value="female" />  
+              <label for="female">female</label><br />
+                <input type="radio" id="diverse" name="sex" value="diverse" />  
+              <label for="diverse">diverse</label><br /><br />
+            </form>
+          </div>
+        </div>
+
+        <div class="a-container">
+          <div class="b-container">
+            <!-- checkliste -->
+            <p>Why do you love Tokyo so much?</p>
+
+            <form action="/action_page.php">
+              <input
+                type="checkbox"
+                id="choise1"
+                name="choise1"
+                value="People"
+              />
+              <label for="choise1"> I love the people</label><br />
+              <input
+                type="checkbox"
+                id="choise2"
+                name="choise2"
+                value="Language"
+              />
+              <label for="choise2"> I love the language</label><br />
+              <input type="checkbox" id="choise3" name="choise3" value="Food" />
+              <label for="choise3"> I love the food</label><br /><br />
+            </form>
+          </div>
+          <div class="b-container">
+            <!-- select element, how did you find out about us -->
+            <p>How did you find out about us?</p>
+            <form action="/action_page.php">
+              <label for="options">Choose one:</label>
+              <select name="cars" id="cars">
+                <option value="internet">Internet</option>
+                <option value="friends">Friends</option>
+                <option value="others">Others</option>
+              </select>
+              <br /><br />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <div class="nested-container">
+      <!-- nested item -->
+      <h2>Terms and Conditions</h2>
+      <ol>
+        <li>Usage Policy</li>
+        <li>
+          Privacy
+          <ul>
+            <li>
+              We respect your privacy and only collect necessary information to
+              improve your experience.
+            </li>
+            <li>Please read our privacy policy for more details.</li>
+          </ul>
+        </li>
+        <li>Liability</li>
+      </ol>
+      <br />
+    </div>
+
+    <footer class="foot">
+      <ul>
+        <li><a href="contact.html">Contact </a></li>
+
+        <li><p>About us</p></li>
+
+        <li><p>Work for us</p></li>
+
+        <li><a href="registration.html">Registration</a></li>
+      </ul>
+      <div>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+    </footer>
+  </body>
+</html>
